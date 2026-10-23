@@ -11,9 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="hu_HU">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,7 +22,7 @@
       <img src="images/logo.jpg" data-orig="https://schi-bau.hu/wp-content/uploads/2017/08/Schi-Bau_fejlec.jpg" alt="Schi-Bau 2004" class="" loading="eager" decoding="async" onerror="if(this.dataset.orig&amp;&amp;this.src!==this.dataset.orig){this.src=this.dataset.orig}">
     </a>
     <button class="nav-toggle" type="button" aria-label="Menü" aria-controls="nav" aria-expanded="false"><span></span></button>
-    <nav class="nav" id="nav" aria-label="Főmenü"><ul><li><a href="index.html">Kezdőlap</a></li><li class="has-sub"><a href="index.html#bemutatkozas" aria-current="page">Bemutatkozás<span class="caret" aria-hidden="true">▾</span></a><ul class="sub"><li><a href="adatvedelem.html">Adatvédelmi és adatbiztonsági szabályzat</a><ul class="sub"><li><a href="adatvedelem-6-melleklet.html" aria-current="page">Adatvédelmi és adatbiztonsági szabályzat 6.sz melléklet</a></li></ul></li></ul></li><li><a href="referenciak.html">Referenciák</a></li><li><a href="arajanlat.html">Árajánlat</a></li><li><a href="galeria.html">Galéria</a></li></ul></nav>
+    <nav class="nav" id="nav" aria-label="Főmenü"><ul><li><a href="index.html">Kezdőlap</a></li><li class="has-sub"><a href="index.html#bemutatkozas" aria-current="page">Bemutatkozás<span class="caret" aria-hidden="true">▾</span></a><ul class="sub"><li><a href="adatvedelem.html">Adatvédelmi és adatbiztonsági szabályzat</a><ul class="sub"><li><a href="adatvedelem-6-melleklet.html" aria-current="page">Adatvédelmi és adatbiztonsági szabályzat 6.sz melléklet</a></li><li><a href="suti-tajekoztato.html">Süti tájékoztató</a></li></ul></li></ul></li><li><a href="referenciak.html">Referenciák</a></li><li><a href="arajanlat.html">Árajánlat</a></li><li><a href="galeria.html">Galéria</a></li></ul></nav>
   </div>
 </header>
 <main id="main">
@@ -38,6 +36,7 @@
 <section class="section">
   <div class="container prose">
     <article class="policy">
+<p class="policy-note">A honlapon használt sütikről, a hozzájárulás megadásáról és visszavonásáról a <a href="suti-tajekoztato.html">Süti tájékoztatóban</a> olvashat. Süti-beállításait <button type="button" class="consent-link" data-consent-open>itt módosíthatja</button>.</p>
 <h3>6. sz. melléklet: Honlapon történő adatkezelés</h3>
 <p>Tájékoztató a Schi-Bau 2004 Kft. honlapján megvalósuló adatkezelésről, valamint a Schi-Bau 2004 Kft. üzleti partnereire vonatkozó Általános Szerződési Feltételekről<br />
 <strong>1. A tájékoztató célja:</strong><br />
@@ -145,7 +144,7 @@ megszüntetésére. Az eljárás másik lehetséges kimenetele pedig, hogy a hat
 megállapítja, hogy az érintett adat valóban jogszerűen tartozik a nemzeti minősített adatok<br />
 védelme alá. A titokfelügyeleti eljárás ügyintézésére két hónapja van a hatóságnak, ami egy<br />
 alkalommal (legfeljebb harminc nappal) meghosszabbítható.</p>
-<p class="policy-link"><a href="adatvedelem.html">← Vissza az Adatvédelmi és adatbiztonsági szabályzathoz</a></p>
+<p class="policy-link"><a href="suti-tajekoztato.html">Süti tájékoztató →</a><br><a href="adatvedelem.html">← Vissza az Adatvédelmi és adatbiztonsági szabályzathoz</a></p>
     </article>
   </div>
 </section>
@@ -171,7 +170,7 @@ alkalommal (legfeljebb harminc nappal) meghosszabbítható.</p>
           <li><a href="galeria.html">Galéria</a></li>
           <li><a href="arajanlat.html">Árajánlat</a></li>
           <li><a href="adatvedelem.html">Adatvédelmi és adatbiztonsági szabályzat</a>
-            <ul><li><a href="adatvedelem-6-melleklet.html">Adatvédelmi és adatbiztonsági szabályzat 6.sz melléklet</a></li></ul>
+            <ul><li><a href="adatvedelem-6-melleklet.html">Adatvédelmi és adatbiztonsági szabályzat 6.sz melléklet</a></li><li><a href="suti-tajekoztato.html">Süti tájékoztató</a></li></ul>
           </li>
         </ul>
       </div>
@@ -183,15 +182,12 @@ alkalommal (legfeljebb harminc nappal) meghosszabbítható.</p>
     </div>
     <div class="footer-bottom">
       <span>© 2004–2026 Schi-Bau 2004 Kft.</span>
-      <span>Mór · Ipari padlók, út- és térbetonok</span>
+      <span>Mór · Ipari padlók, út- és térbetonok · <a href="suti-tajekoztato.html">Süti tájékoztató</a> · <button type="button" class="consent-link" data-consent-open>Süti-beállítások</button></span>
     </div>
   </div>
 </footer>
-<div class="cookie" role="region" aria-label="Süti tájékoztató">
-  <p>Kedves Látogató! Tájékoztatjuk, hogy a honlap felhasználói élmény fokozásának érdekében sütiket alkalmazunk. A honlapunk használatával ön a tájékoztatásunkat tudomásul veszi.</p>
-  <button class="btn btn--primary" type="button">Elfogadom</button>
-</div>
 <button class="to-top" type="button" aria-label="Vissza a lap tetejére">↑</button>
+<script src="js/consent.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
