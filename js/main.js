@@ -215,18 +215,6 @@
     });
   }
 
-  /* Süti tájékoztató */
-  var cookie = document.querySelector(".cookie");
-  if (cookie) {
-    var seen = false;
-    try { seen = localStorage.getItem("sb-cookie-ok") === "1"; } catch (err) {}
-    if (!seen) setTimeout(function () { cookie.classList.add("is-visible"); }, 1200);
-    cookie.querySelector("button").addEventListener("click", function () {
-      cookie.classList.remove("is-visible");
-      try { localStorage.setItem("sb-cookie-ok", "1"); } catch (err) {}
-    });
-  }
-
   /* Áttűnés oldalváltáskor, ha a böngésző nem ismeri a View Transitions API-t */
   if (!("onpagereveal" in window) && !reduce) {
     document.addEventListener("click", function (e) {
